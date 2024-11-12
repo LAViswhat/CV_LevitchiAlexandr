@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+p,
+span,
+a,
+li {
+  font-size: 1.115rem;
+}
+
+a {
+  @apply hover:text-secondary duration-500;
+}
