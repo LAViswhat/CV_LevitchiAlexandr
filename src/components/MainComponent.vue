@@ -4,8 +4,6 @@ const projects = [
     id: 1,
     title: " Hairprocosmetics",
     info: "Online Shop for hair, face, and body: An e-commerce site built on Prestashop",
-    git: "",
-    gitLive: "",
     live: "hairprocosmetics.com",
     url: "https://hairprocosmetics.com/",
   },
@@ -13,8 +11,6 @@ const projects = [
     id: 2,
     title: " Italian Goods",
     info: "Test Project for New Products: Developed as a concept for an online marketplace.",
-    git: "https://github.com/LAViswhat/italian_goods",
-    gitLive: "github.com/LAViswhat/italian_goods",
     live: "italiangoods.netlify.app",
     url: "https://italiangoods.netlify.app/",
   },
@@ -22,8 +18,6 @@ const projects = [
     id: 3,
     title: " D'Omo Cosmetics",
     info: "E-commerce Project for Cosmetic Products: Developed and maintained a promotional site for a new gel product.",
-    git: "",
-    gitLive: "",
     live: "domocosmetics.shop",
     url: "https://domocosmetics.shop/",
   },
@@ -31,8 +25,6 @@ const projects = [
     id: 4,
     title: " D’Omo Gel Campaign",
     info: "Promotional Landing Page: Built to test sellings immediately from the landing.",
-    git: "https://github.com/LAViswhat/gel-campaign-1",
-    gitLive: "github.com/LAViswhat/gel-campaign-1",
     live: "domogel-campaign-1.vercel.app",
     url: "https://domogel-campaign-1.vercel.app/",
   },
@@ -40,22 +32,20 @@ const projects = [
     id: 5,
     title: " D’Omo Gel Campaign 2",
     info: "Promotional Landing Page: Created to support the marketing campaign for D’Omo Gel.",
-    git: "https://github.com/LAViswhat/gel-campaign-2",
-    gitLive: "github.com/LAViswhat/gel-campaign-2",
     live: "domocosmetics.shop/l/en/gel-campaign-1",
     url: "https://domocosmetics.shop/l/en/gel-campaign-1/",
   },
 ];
 </script>
 <template>
-  <main class="py-12 px-8">
-    <h1 class="text-primary pb-4 border-b-8 border-primary">
+  <main class="py-8 px-6">
+    <h1 class="text-primary pb-1 border-b-8 border-primary">
       Alexandr Levitchi
     </h1>
 
-    <section class="summary text-dgray mt-8">
+    <section class="summary text-dgray mt-6">
       <h2>Professional summary</h2>
-      <p class="pt-2">
+      <p class="pt-1">
         &nbsp;I’m a dedicated frontend developer with over three years of
         hands-on experience. My journey began with freelancing, where I tackled
         diverse projects that allowed me to deepen my skills, explore new
@@ -77,9 +67,9 @@ const projects = [
         delivering work that excites users and meets business goals.
       </p>
     </section>
-    <section class="history text-dgray mt-8 pt-1 border-t-2 border-lgray">
+    <section class="history text-dgray mt-6 pt-1 border-t-2 border-lgray">
       <h2>Work history</h2>
-      <div class="mt-4">
+      <div class="mt-1">
         <div class="flex flex-row justify-between">
           <span class="font-black">Frontend developer</span>
           <p>09/2022 - 09/2024</p>
@@ -89,7 +79,7 @@ const projects = [
             <span class="font-black">TakeOff Sagl</span> - Chisinau, Moldova
           </p>
         </div>
-        <ul class="mt-4 pl-6 list-disc">
+        <ul class="mt-2 pl-6 list-disc">
           <li>
             Supported and optimized the WordPress-based site locandaitalia.shop,
             handling bug fixes and creating HTML marketing emails that boosted
@@ -120,7 +110,7 @@ const projects = [
           </li>
         </ul>
       </div>
-      <div class="mt-8">
+      <div class="mt-4">
         <div class="flex flex-row justify-between">
           <span class="font-black">Frontend developer</span>
           <p>06/2021 - 09/2022</p>
@@ -128,7 +118,7 @@ const projects = [
         <div>
           <p><span class="font-black">Freelance</span> - Chisinau, Moldova</p>
         </div>
-        <ul class="mt-4 pl-6">
+        <ul class="mt-2 pl-6">
           <li class="list-disc">
             Developed custom frontend solutions for various clients, focusing on
             delivering responsive designs with intuitive interfaces.
@@ -136,18 +126,14 @@ const projects = [
         </ul>
       </div>
     </section>
-    <section class="projects text-dgray mt-8 pt-1 border-t-2 border-lgray">
+    <section class="projects text-dgray mt-6 pt-1 border-t-2 border-lgray">
       <h2>Projects</h2>
-      <div class="mt-4">
+      <div class="mt-1">
         <ul v-for="project in projects">
-          <li :key="project.id" class="!pl-0">
-            <p class="font-black pb-2">{{ project.id }}. {{ project.title }}</p>
+          <li :key="project.id">
+            <p class="font-black">{{ project.id }}. {{ project.title }}</p>
             <ul class="list-disc pl-6">
               <li>{{ project.info }}</li>
-              <li v-if="project.git !== ''">
-                <span class="font-bold">Github: </span>
-                <a :href="project.git" target="_blank">{{ project.gitLive }}</a>
-              </li>
               <li>
                 <span class="font-bold">Live: </span>
                 <a :href="project.url" target="_blank">{{ project.live }}</a>
@@ -157,9 +143,9 @@ const projects = [
         </ul>
       </div>
     </section>
-    <section class="education text-dgray mt-8 pt-1 border-t-2 border-lgray">
+    <section class="education text-dgray mt-6 pt-1 border-t-2 border-lgray">
       <h2>Education</h2>
-      <div class="mt-4">
+      <div class="mt-1">
         <div>
           <p>
             <span class="font-black"
@@ -179,7 +165,7 @@ const projects = [
 </template>
 <style scoped>
 li {
-  @apply pl-4 pb-4;
+  @apply pb-1;
 }
 a {
   @apply underline;

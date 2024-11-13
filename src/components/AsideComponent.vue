@@ -74,22 +74,22 @@ const softSkills = [
 </script>
 
 <template>
-  <aside class="bg-primary text-lgray pl-10 pr-6 py-8">
+  <aside class="bg-primary text-lgray px-6 py-8">
     <div class="avatar">
       <img
-        class="rounded-full border-secondary border-2 w-[320px]"
+        class="rounded-full border-secondary border-2 w-[240px]"
         src="../assets/img/avatar.jpg"
         alt="Levitchi Alexandr"
       />
     </div>
-    <div class="contatcs mt-4">
-      <h2 class="border-t-2 pt-1 mb-2 mt-10">Contacts</h2>
-      <div class="inline-flex items-center gap-4 cursor-default">
+    <div class="contatcs">
+      <h2 class="border-t-2 pt-1 mb-2 mt-6">Contacts</h2>
+      <div class="inline-flex items-center gap-2 cursor-default">
         <font-awesome-icon :icon="['fas', 'map-location-dot']" />
         <p class="font-bold">Chisinau, Moldova</p>
       </div>
       <ul v-for="contact in contacts" class="cursor-pointer">
-        <li :key="contact.key" class="inline-flex items-center gap-4">
+        <li :key="contact.key" class="inline-flex items-center gap-2">
           <font-awesome-icon :icon="contact.icon" />
           <a :href="contact.url" target="_blank" class="font-bold">{{
             contact.info
@@ -97,58 +97,58 @@ const softSkills = [
         </li>
       </ul>
     </div>
-    <div class="skills mt-4">
-      <h2 class="border-t-2 pt-1 mb-2 mt-10">Technical Skills</h2>
+    <div class="skills">
+      <h2 class="border-t-2 pt-1 mb-2 mt-6">Technical Skills</h2>
 
-      <ul v-for="skill in skills" class="cursor-default list-disc pl-6">
-        <li :key="skill.key" class="pl-1">
+      <ul v-for="skill in skills" class="cursor-default list-disc pl-4">
+        <li :key="skill.key">
           <span class="font-black">{{ skill.title }}</span>
           <span>{{ skill.info }}</span>
         </li>
       </ul>
     </div>
-    <div class="soft-skills mt-4">
-      <h2 class="border-t-2 pt-1 mb-2 mt-10">Soft Skills</h2>
+    <div class="soft-skills">
+      <h2 class="border-t-2 pt-1 mb-2 mt-6">Soft Skills</h2>
 
-      <ul v-for="softSkill in softSkills" class="cursor-default list-disc pl-6">
-        <li :key="softSkill.key" class="pl-1">
+      <ul v-for="softSkill in softSkills" class="cursor-default list-disc pl-4">
+        <li :key="softSkill.key">
           <span class="font-black">{{ softSkill.title }}</span>
           <span>{{ softSkill.info }}</span>
         </li>
       </ul>
     </div>
-    <div class="languages mt-4">
-      <h2 class="border-t-2 pt-1 mb-2 mt-10">Languages</h2>
+    <div class="languages">
+      <h2 class="border-t-2 pt-1 mb-2 mt-6">Languages</h2>
 
-      <ul class="cursor-default list-disc pl-6">
-        <li class="pl-1">
+      <ul class="cursor-default list-disc pl-4">
+        <li>
           <p><span class="font-black">Russian </span>(native)</p>
         </li>
-        <li class="pl-1">
+        <li>
           <p><span class="font-black">Romanian </span>(advanced)</p>
         </li>
-        <li class="pl-1">
+        <li>
           <p><span class="font-black">English </span>(intermediate)</p>
         </li>
       </ul>
     </div>
-    <div class="hobbies mt-4">
-      <h2 class="border-t-2 pt-1 mb-2 mt-10">Hobbies and interests</h2>
+    <div class="hobbies">
+      <h2 class="border-t-2 pt-1 mb-2 mt-6">Hobbies and interests</h2>
 
-      <ul class="cursor-default list-disc pl-6">
-        <li class="pl-1">
+      <ul class="cursor-default list-disc pl-4">
+        <li>
           <p>Climbing</p>
         </li>
-        <li class="pl-1">
+        <li>
           <p>Hiking</p>
         </li>
-        <li class="pl-1">
+        <li>
           <p>Workout</p>
         </li>
-        <li class="pl-1">
+        <li>
           <p>Reading books</p>
         </li>
-        <li class="pl-1">
+        <li>
           <p>Watching movies</p>
         </li>
       </ul>
